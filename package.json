@@ -11,13 +11,14 @@
     "url": "git+https://github.com/platzi/curso-manipulacion-de-arrays.git"
   },
   "keywords": [],
-  "author": "",
+  "author": "Stefan Sanchez <stefanace26@gmail.com>",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/platzi/curso-manipulacion-de-arrays/issues"
   },
   "homepage": "https://github.com/platzi/curso-manipulacion-de-arrays#readme",
   "dependencies": {
-    "http-server": "^0.12.3"
+    "date-fns": "^2.24.0",
+    "live-server": "^1.2.1"
   }
 }

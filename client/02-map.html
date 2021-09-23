@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>forEach</title>
+</head>
+<body>
+	<div id="app">
+
+	</div>
+
+
+	<script>
+
+		const tasks = [
+			{
+				work:'make bed',
+				done:false,
+ 			},
+			{
+				work:'take a shower',
+				done:false ,
+			},
+			{
+				work:'wash the dishes',
+				done:false,
+ 			},
+			{
+				work:'wash the car',
+				done:true ,
+			}
+		]
+
+		const app = document.getElementById('app')
+		const lis = tasks.map(task => {
+			return`<li>${task.work} <input type="checkbox" name="${task.work}" id="" ${task.done && 'checked'}></li>`
+		})
+
+		app.innerHTML= lis.join('')
+		const inputs = document.getElementsByTagName('input')
+		const values = [...inputs] 
+		values.forEach(i =>i.addEventListener('change', ()=> console.log('alogdon')))
+	</script>
+</body>
+</html>
